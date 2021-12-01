@@ -1,0 +1,43 @@
+
+::selection {background-color: #5173b3!important;}
+::-moz-selection {background-color: #5173b3!important;}
+a {color: #5173b3;}
+a:hover {color: #3f598c;}
+.page-link {color: #5173b3;}
+.page-link:hover {color: #3f598c;}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {background-color: #5173b3!important;}
+.material-half-bg .cover {background-color: #5173b3!important;}
+.app-sidebar {background-color: #5173b3!important;}
+.app-sidebar__toggle:focus, .app-sidebar__toggle:hover {background-color: #3f598c!important;}
+.text-primary {color: #5173b3!important;}
+.btn-primary {background-color: #5173b3!important; border-color: #5173b3!important;}
+.btn-primary:hover {background-color: #3f598c!important; border-color: #3f598c!important;}
+.page-item.active .page-link {background-color: #5173b3!important; border-color: #5173b3!important;}
+.form-control:focus {border-color: #5173b3!important;}
+.animated-checkbox input[type="checkbox"]:checked + .label-text:before {color: #5173b3!important;}
+.widget-small.primary.coloured-icon .icon {background-color: #5173b3!important;}
+.dropdown-item.active, .dropdown-item:active {background-color: #5173b3!important;}
+.treeview-menu {background-color: #3f598c!important;}
+.progress-bar {background-color: #5173b3!important;}
+#pills-tab .nav-link .badge {color: #fff; background-color: #5173b3;}
+#pills-tab .nav-link.active .badge {color: #212529; background-color: #f8f9fa;}
+.login-content .login-box {min-height: 430px;}
+.app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {border-left-color: #fdd100!important;}
+.btn .icon, .btn .fa {margin-right: 0; width: 14px;}
+.app-header {background-color: #555!important;}
+.app-sidebar__user-avatar {border-radius: 0!important;}
+.app-menu__submenu {margin-top: 2rem; padding: 8px 15px;}
+.app-menu__submenu .app-menu__label {color: #fff; font-size: 1rem; font-weight: bold; text-transform: uppercase;}
+.tab-content {border-top: 1px solid #5173b3;}
+.separator {width: 100%; margin: 1rem; border-top: 1px solid #ddd;}
+.tile-title-w-btn h5 {text-decoration: underline;}
+.app-header__logo {font-family: 'Lato'!important;}
+@media(max-width: 767px){
+    .app-header__logo {display: none;}
+}
+@media(min-width: 768px){
+    .app-header__logo {background-color: #5173b380!important; text-transform: uppercase;}
+}
+.dataTable {width: 100%!important;}
+.dataTable > thead > tr > th {text-align: center; vertical-align: middle;}
+.datepicker.dropdown-menu {z-index: 2000;}
