@@ -21,7 +21,7 @@ class Member
         $guards = empty($guards) ? [null] : $guards;
 
         foreach($guards as $guard) {
-            if(Auth::guard($guard)->check() && Auth::user()->role == role('member')) {
+            if(Auth::guard($guard)->check() && Auth::user()->role_id == role('member')) {
                 return $next($request);
             }
         }

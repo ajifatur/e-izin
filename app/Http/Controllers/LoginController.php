@@ -43,7 +43,7 @@ class LoginController extends Controller
 		];
 
         if(Auth::attempt($credentials)) {
-            if($request->user()->role == role('super-admin') || $request->user()->role == role('admin') || $request->user()->role == role('manager')) {
+            if($request->user()->role_id == role('super-admin') || $request->user()->role_id == role('admin') || $request->user()->role_id == role('manager')) {
                 Auth::logout();
                 $request->session()->invalidate();
                 $request->session()->regenerateToken();
@@ -51,7 +51,7 @@ class LoginController extends Controller
                     'message' => 'Anda tidak mempunyai akses ke aplikasi ini.',
                 ]);
             }
-            elseif($request->user()->role == role('member')) {
+            elseif($request->user()->role_id == role('member')) {
                 $request->session()->regenerate();
                 return redirect()->route('member.dashboard');
             }
