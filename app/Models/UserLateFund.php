@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Setting extends Model
+class UserLateFund extends Model
 {
     use HasFactory;
 
@@ -14,19 +14,20 @@ class Setting extends Model
      *
      * @var string
      */
-    protected $table = 'settings';
+    protected $table = 'user__late__funds';
 
     /**
      * Fill the model with an array of attributes.
      *
      * @param  array
      */
-    protected $fillable = ['name', 'category', 'rules', 'code', 'value'];
-
+    protected $fillable = ['month', 'year', 'amount'];
+    
     /**
-     * Indicates if the model should be timestamped.
-     *
-     * @var bool
+     * Get the user that owns the indicator.
      */
-    public $timestamps = false;
+    public function user()
+    {
+        return $this->belongsTo(Group::class, 'user_id');
+    }
 }

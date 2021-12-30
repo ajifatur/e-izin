@@ -19,7 +19,7 @@ class Absent extends Model
     /**
      * Fill the model with an array of attributes.
      *
-     * @param  array  $attributes
+     * @param  array
      */
     protected $fillable = ['category_id', 'date', 'note', 'attachment'];
     

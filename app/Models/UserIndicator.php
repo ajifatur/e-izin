@@ -14,17 +14,14 @@ class UserIndicator extends Model
      *
      * @var string
      */
-    protected $table = 'user_indicators';
+    protected $table = 'user__indicators';
 
     /**
      * Fill the model with an array of attributes.
      *
-     * @param  array  $attributes
-     * @return $this
-     *
-     * @throws \Illuminate\Database\Eloquent\MassAssignmentException
+     * @param  array
      */
-    protected $fillable = ['value'];
+    protected $fillable = ['month', 'year', 'value'];
     
     /**
      * Get the user that owns the indicator.

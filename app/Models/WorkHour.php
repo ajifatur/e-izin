@@ -14,20 +14,17 @@ class WorkHour extends Model
      *
      * @var string
      */
-    protected $table = 'work_hours';
+    protected $table = 'work__hours';
 
     /**
-     * Fill the model with an array of attributes.
+     * The attributes that are mass assignable.
      *
-     * @param  array  $attributes
-     * @return $this
-     *
-     * @throws \Illuminate\Database\Eloquent\MassAssignmentException
+     * @var array
      */
     protected $fillable = ['name', 'category', 'quota', 'start_at', 'end_at'];
     
     /**
-     * Get the group that owns the office.
+     * Get the group that owns the work hour.
      */
     public function group()
     {
@@ -35,7 +32,7 @@ class WorkHour extends Model
     }
 
     /**
-     * Get the office that owns the office.
+     * Get the office that owns the work hour.
      */
     public function office()
     {
@@ -43,7 +40,7 @@ class WorkHour extends Model
     }
 
     /**
-     * Get the position that owns the office.
+     * Get the position that owns the work hour.
      */
     public function position()
     {
